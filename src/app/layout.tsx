@@ -1,58 +1,22 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
-import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
+import "./styles/variables.css";
+import "./styles/base.css";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
-
-const sourceSans3 = Source_Sans_3({
-  variable: "--font-source-sans-3",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AstroSec | Cybersecurity & AI Solutions Agency",  description: "End-to-end cybersecurity, advanced AI automation, and full-stack development. Protect your systems and accelerate innovation with AstroSec.",  keywords: "cybersecurity, AI solutions, security audits, threat detection, AI automation, enterprise security, cloud security",  metadataBase: new URL("https://astrosec.io"),
-  alternates: {
-    canonical: "https://astrosec.io"},
-  openGraph: {
-    title: "AstroSec | Cybersecurity & AI Solutions",    description: "Next-generation security and AI expertise for forward-thinking enterprises",    url: "https://astrosec.io",    siteName: "AstroSec",    type: "website",    images: [
-      {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/a-sleek-cybersecurity-dashboard-interfac-1772646995274-0c5cb9e7.png",        alt: "AstroSec Security Operations Center"},
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",    title: "AstroSec | Cybersecurity & AI Solutions",    description: "Enterprise-grade security and AI innovation",    images: [
-      "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/a-sleek-cybersecurity-dashboard-interfac-1772646995274-0c5cb9e7.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "AstroSec - Cybersecurity & AI Solutions",  description: "Next-generation security and AI solutions for enterprises"};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} ${sourceSans3.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1420,7 +1384,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
