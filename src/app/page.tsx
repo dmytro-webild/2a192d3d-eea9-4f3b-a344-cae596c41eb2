@@ -181,13 +181,13 @@ export default function LandingPage() {
           testimonials={[
             {
               id: "1",              name: "Sarah Chen",              role: "CTO",              company: "TechCorp Global",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Sarah Chen, CTO at TechCorp Global"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=1",              imageAlt: "Sarah Chen, CTO at TechCorp Global"},
             {
               id: "2",              name: "Michael Rodriguez",              role: "Security Director",              company: "SecureNet Systems",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Michael Rodriguez, Security Director at SecureNet Systems"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=2",              imageAlt: "Michael Rodriguez, Security Director at SecureNet Systems"},
             {
               id: "3",              name: "Emma Watson",              role: "Operations Lead",              company: "CloudScale AI",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Emma Watson, Operations Lead at CloudScale AI"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=3",              imageAlt: "Emma Watson, Operations Lead at CloudScale AI"},
           ]}
           kpiItems={[
             { value: "180+", label: "Projects Completed" },
