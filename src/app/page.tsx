@@ -114,18 +114,30 @@ export default function LandingPage() {
             {
               id: "ai-systems",              label: "AI Systems & Agents",              title: "Advanced AI Automation & Development",              items: [
                 "Custom AI Agents Development",                "Business Process Automation",                "AI Monitoring & Decision Systems"],
+              buttons: [
+                { text: "Learn More", href: "#" }
+              ]
             },
             {
               id: "cybersecurity",              label: "Cybersecurity",              title: "Enterprise-Grade Protection",              items: [
                 "Security Audits & WMPT",                "Cloud & Infrastructure Security",                "Incident Response & Hardening"],
+              buttons: [
+                { text: "Learn More", href: "#" }
+              ]
             },
             {
               id: "engineering",              label: "IT & Engineering",              title: "Robust Infrastructure & Development",              items: [
                 "Secure Web & App Development",                "Cloud Architecture & DevOps",                "Server & System Engineering"],
+              buttons: [
+                { text: "Learn More", href: "#" }
+              ]
             },
             {
               id: "consulting",              label: "Strategy & Consulting",              title: "Expert Advisory & Implementation",              items: [
                 "AI & Security Consulting",                "Startup Tech Architecture",                "Custom Enterprise Solutions"],
+              buttons: [
+                { text: "Learn More", href: "#" }
+              ]
             },
           ]}
           animationType="blur-reveal"
