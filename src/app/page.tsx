@@ -6,6 +6,7 @@ import HeroBillboardDashboard from "@/components/sections/hero/HeroBillboardDash
 import FeatureCardTwelve from "@/components/sections/feature/FeatureCardTwelve";
 import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
 import SocialProofOne from "@/components/sections/socialProof/SocialProofOne";
+import TestimonialCardSixteen from "@/components/sections/testimonial/TestimonialCardSixteen";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterSimple from "@/components/sections/footer/FooterSimple";
 import {
@@ -18,6 +19,7 @@ import {
   TrendingUp,
   Eye,
   Award,
+  Star,
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -38,14 +40,13 @@ export default function LandingPage() {
         <NavbarLayoutFloatingInline
           brandName="AstroSec"
           navItems={[
-            { name: "Services", id: "services" },
+            { name: "Services", id: "expertise" },
             { name: "Expertise", id: "expertise" },
-            { name: "About", id: "metrics" },
+            { name: "Testimonials", id: "testimonials" },
             { name: "Contact", id: "contact" },
           ]}
           button={{
-            text: "Get Started",            href: "contact"
-          }}
+            text: "Get Started",            href: "contact"}}
           animateOnLoad={true}
         />
       </div>
@@ -58,7 +59,7 @@ export default function LandingPage() {
           tagIcon={Shield}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Explore Solutions", href: "services" },
+            { text: "Explore Solutions", href: "expertise" },
             { text: "Schedule Consultation", href: "contact" },
           ]}
           buttonAnimation="slide-up"
@@ -77,16 +78,13 @@ export default function LandingPage() {
             stats: [
               {
                 title: "Threats Blocked",                values: [12487, 15632, 18945],
-                description: "This week"
-              },
+                description: "This week"},
               {
                 title: "System Uptime",                values: [99.98, 99.99, 99.97],
-                valueSuffix: "%",                description: "Average performance"
-              },
+                valueSuffix: "%",                description: "Average performance"},
               {
                 title: "Active Clients",                values: [456, 523, 687],
-                description: "Protected globally"
-              },
+                description: "Protected globally"},
             ],
             chartTitle: "Security Events Timeline",            chartData: [
               { value: 45 },
@@ -98,16 +96,13 @@ export default function LandingPage() {
             listTitle: "Recent Security Actions",            listItems: [
               {
                 icon: AlertCircle,
-                title: "Intrusion Attempt Blocked",                status: "Mitigated"
-              },
+                title: "Intrusion Attempt Blocked",                status: "Mitigated"},
               {
                 icon: CheckCircle,
-                title: "Compliance Audit Passed",                status: "Verified"
-              },
+                title: "Compliance Audit Passed",                status: "Verified"},
               {
                 icon: Shield,
-                title: "Firewall Updated",                status: "Complete"
-              },
+                title: "Firewall Updated",                status: "Complete"},
             ],
           }}
         />
@@ -118,23 +113,19 @@ export default function LandingPage() {
           features={[
             {
               id: "ai-systems",              label: "AI Systems & Agents",              title: "Advanced AI Automation & Development",              items: [
-                "Custom AI Agents Development",                "Business Process Automation",                "AI Monitoring & Decision Systems"
-              ],
+                "Custom AI Agents Development",                "Business Process Automation",                "AI Monitoring & Decision Systems"],
             },
             {
               id: "cybersecurity",              label: "Cybersecurity",              title: "Enterprise-Grade Protection",              items: [
-                "Security Audits & WMPT",                "Cloud & Infrastructure Security",                "Incident Response & Hardening"
-              ],
+                "Security Audits & WMPT",                "Cloud & Infrastructure Security",                "Incident Response & Hardening"],
             },
             {
               id: "engineering",              label: "IT & Engineering",              title: "Robust Infrastructure & Development",              items: [
-                "Secure Web & App Development",                "Cloud Architecture & DevOps",                "Server & System Engineering"
-              ],
+                "Secure Web & App Development",                "Cloud Architecture & DevOps",                "Server & System Engineering"],
             },
             {
               id: "consulting",              label: "Strategy & Consulting",              title: "Expert Advisory & Implementation",              items: [
-                "AI & Security Consulting",                "Startup Tech Architecture",                "Custom Enterprise Solutions"
-              ],
+                "AI & Security Consulting",                "Startup Tech Architecture",                "Custom Enterprise Solutions"],
             },
           ]}
           animationType="blur-reveal"
@@ -179,10 +170,37 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "TechCorp Global",            "SecureNet Systems",            "CloudScale AI",            "DataVault Inc",            "InnovateX Labs",            "CyberShield Pro",            "AI Dynamics"
-          ]}
+            "TechCorp Global",            "SecureNet Systems",            "CloudScale AI",            "DataVault Inc",            "InnovateX Labs",            "CyberShield Pro",            "AI Dynamics"]}
           speed={40}
           showCard={true}
+        />
+      </div>
+
+      <div id="testimonials" data-section="testimonials">
+        <TestimonialCardSixteen
+          testimonials={[
+            {
+              id: "1",              name: "Sarah Chen",              role: "CTO",              company: "TechCorp Global",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Sarah Chen, CTO at TechCorp Global"},
+            {
+              id: "2",              name: "Michael Rodriguez",              role: "Security Director",              company: "SecureNet Systems",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Michael Rodriguez, Security Director at SecureNet Systems"},
+            {
+              id: "3",              name: "Emma Watson",              role: "Operations Lead",              company: "CloudScale AI",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png",              imageAlt: "Emma Watson, Operations Lead at CloudScale AI"},
+          ]}
+          kpiItems={[
+            { value: "180+", label: "Projects Completed" },
+            { value: "96%", label: "Client Satisfaction" },
+            { value: "15+", label: "Years of Excellence" },
+          ]}
+          animationType="slide-up"
+          title="What Our Clients Say"
+          description="Hear from those who've experienced our transformative solutions"
+          tag="Client Testimonials"
+          tagIcon={Star}
+          textboxLayout="default"
+          useInvertedBackground={false}
         />
       </div>
 
@@ -205,7 +223,7 @@ export default function LandingPage() {
             {
               title: "Navigate",              items: [
                 { label: "Home", href: "/" },
-                { label: "Services", href: "#services" },
+                { label: "Services", href: "#expertise" },
                 { label: "Expertise", href: "#expertise" },
                 { label: "Contact", href: "#contact" },
               ],
