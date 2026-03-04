@@ -20,6 +20,9 @@ import {
   Eye,
   Award,
   Star,
+  Brain,
+  Code,
+  Lightbulb,
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -46,7 +49,8 @@ export default function LandingPage() {
             { name: "Contact", id: "contact" },
           ]}
           button={{
-            text: "Get Started",            href: "contact"}}
+            text: "Get Started",            href: "contact"
+          }}
           animateOnLoad={true}
         />
       </div>
@@ -78,13 +82,16 @@ export default function LandingPage() {
             stats: [
               {
                 title: "Threats Blocked",                values: [12487, 15632, 18945],
-                description: "This week"},
+                description: "This week"
+              },
               {
                 title: "System Uptime",                values: [99.98, 99.99, 99.97],
-                valueSuffix: "%",                description: "Average performance"},
+                valueSuffix: "%",                description: "Average performance"
+              },
               {
                 title: "Active Clients",                values: [456, 523, 687],
-                description: "Protected globally"},
+                description: "Protected globally"
+              },
             ],
             chartTitle: "Security Events Timeline",            chartData: [
               { value: 45 },
@@ -96,13 +103,16 @@ export default function LandingPage() {
             listTitle: "Recent Security Actions",            listItems: [
               {
                 icon: AlertCircle,
-                title: "Intrusion Attempt Blocked",                status: "Mitigated"},
+                title: "Intrusion Attempt Blocked",                status: "Mitigated"
+              },
               {
                 icon: CheckCircle,
-                title: "Compliance Audit Passed",                status: "Verified"},
+                title: "Compliance Audit Passed",                status: "Verified"
+              },
               {
                 icon: Shield,
-                title: "Firewall Updated",                status: "Complete"},
+                title: "Firewall Updated",                status: "Complete"
+              },
             ],
           }}
         />
@@ -113,28 +123,32 @@ export default function LandingPage() {
           features={[
             {
               id: "ai-systems",              label: "AI Systems & Agents",              title: "Advanced AI Automation & Development",              items: [
-                "Custom AI Agents Development",                "Business Process Automation",                "AI Monitoring & Decision Systems"],
+                "Custom AI Agents Development",                "Business Process Automation",                "AI Monitoring & Decision Systems"
+              ],
               buttons: [
                 { text: "Learn More", href: "#" }
               ]
             },
             {
               id: "cybersecurity",              label: "Cybersecurity",              title: "Enterprise-Grade Protection",              items: [
-                "Security Audits & WMPT",                "Cloud & Infrastructure Security",                "Incident Response & Hardening"],
+                "Security Audits & WMPT",                "Cloud & Infrastructure Security",                "Incident Response & Hardening"
+              ],
               buttons: [
                 { text: "Learn More", href: "#" }
               ]
             },
             {
               id: "engineering",              label: "IT & Engineering",              title: "Robust Infrastructure & Development",              items: [
-                "Secure Web & App Development",                "Cloud Architecture & DevOps",                "Server & System Engineering"],
+                "Secure Web & App Development",                "Cloud Architecture & DevOps",                "Server & System Engineering"
+              ],
               buttons: [
                 { text: "Learn More", href: "#" }
               ]
             },
             {
               id: "consulting",              label: "Strategy & Consulting",              title: "Expert Advisory & Implementation",              items: [
-                "AI & Security Consulting",                "Startup Tech Architecture",                "Custom Enterprise Solutions"],
+                "AI & Security Consulting",                "Startup Tech Architecture",                "Custom Enterprise Solutions"
+              ],
               buttons: [
                 { text: "Learn More", href: "#" }
               ]
@@ -182,7 +196,8 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "TechCorp Global",            "SecureNet Systems",            "CloudScale AI",            "DataVault Inc",            "InnovateX Labs",            "CyberShield Pro",            "AI Dynamics"]}
+            "TechCorp Global",            "SecureNet Systems",            "CloudScale AI",            "DataVault Inc",            "InnovateX Labs",            "CyberShield Pro",            "AI Dynamics"
+          ]}
           speed={40}
           showCard={true}
         />
@@ -193,13 +208,16 @@ export default function LandingPage() {
           testimonials={[
             {
               id: "1",              name: "Sarah Chen",              role: "CTO",              company: "TechCorp Global",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=1",              imageAlt: "Sarah Chen, CTO at TechCorp Global"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=1",              imageAlt: "Sarah Chen, CTO at TechCorp Global"
+            },
             {
               id: "2",              name: "Michael Rodriguez",              role: "Security Director",              company: "SecureNet Systems",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=2",              imageAlt: "Michael Rodriguez, Security Director at SecureNet Systems"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=2",              imageAlt: "Michael Rodriguez, Security Director at SecureNet Systems"
+            },
             {
               id: "3",              name: "Emma Watson",              role: "Operations Lead",              company: "CloudScale AI",              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=3",              imageAlt: "Emma Watson, Operations Lead at CloudScale AI"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTy5QR9k4M4P80OQXSbT6XGLr/uploaded-1772648769599-68c70eso.png?_wi=3",              imageAlt: "Emma Watson, Operations Lead at CloudScale AI"
+            },
           ]}
           kpiItems={[
             { value: "180+", label: "Projects Completed" },
