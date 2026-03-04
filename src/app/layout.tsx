@@ -7,7 +7,8 @@ import "./styles/base.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AstroSec - Cybersecurity & AI Solutions",  description: "Next-generation security and AI solutions for enterprises"};
+  title: "AstroSec - Cybersecurity & AI Solutions",  description: "Next-generation security and AI solutions for enterprises"
+};
 
 export default function RootLayout({
   children,
